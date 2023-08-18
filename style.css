@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.panel {
+  background-color: rgb(77, 147, 77);
+  width: 70%;
+  height: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ptop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #264926;
+}
+
+.ptItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 50%;
+  height: 80%;
+}
+
+.ptItems > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ptItems .text {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.ptItems .value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 35px;
+  width: fit-content;
+  height: 35px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+.pbody {
+  width: 100%;
+  height: calc(100% - 80px);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 30px;
+}
+
+.pbody > .bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+
+.pbody > .bubble:hover {
+  background-color: rgb(38, 73, 38);
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: #fff;
+  width: 80px;
+  height: 30px;
+}
